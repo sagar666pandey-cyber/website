@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SHREE SHANTI NAMUNA SECONDARY SCHOOL</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#f4f6f9;
+  color:#222;
+}
+
+/* Header */
+header{
+  text-align:center;
+  padding:60px 20px;
+  background:#ffffff;
+}
+
+.logo{
+  width:120px;
+  margin-bottom:15px;
+}
+
+header h1{
+  font-size:38px;
+  font-weight:700;
+}
+
+header p{
+  font-size:18px;
+  color:#555;
+}
+
+/* Navigation */
+nav{
+  background:#003366;
+  padding:15px;
+  position:sticky;
+  top:0;
+}
+
+nav ul{
+  display:flex;
+  justify-content:center;
+  list-style:none;
+  flex-wrap:wrap;
+}
+
+nav ul li{
+  margin:10px 20px;
+}
+
+nav ul li a{
+  text-decoration:none;
+  color:#ffffff;
+  font-weight:600;
+}
+
+nav ul li a:hover{
+  text-decoration:underline;
+}
+
+/* Sections */
+section{
+  padding:70px 20px;
+  max-width:1100px;
+  margin:auto;
+  
+}
+
+h2{
+  text-align:center;
+  margin-bottom:30px;
+  font-size:32px;
+  color:#15a73a;
+  
+}
+
+/* Cards */
+.card{
+  background:#26c2ed;
+  padding:30px;
+  border-radius:12px;
+  margin-bottom:30px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Slider */
+.slider{
+  width:100%;
+  height:350px;
+  overflow:hidden;
+  border-radius:15px;
+}
+
+.slides{
+  display:flex;
+  width:400%;
+  animation:slide 16s infinite;
+}
+
+.slides img{
+  width:100%;
+  height:350px;
+  object-fit:cover;
+}
+
+@keyframes slide{
+  0%{margin-left:0}
+  25%{margin-left:-100%}
+  50%{margin-left:-200%}
+  75%{margin-left:-300%}
+}
+
+/* Departments */
+.departments{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.dept{
+  background:#003366;
+  color:white;
+  padding:25px;
+  border-radius:12px;
+  text-align:center;
+  transition:0.3s;
+}
+
+.dept:hover{
+  background:#0055aa;
+  transform:translateY(-6px);
+}
+
+/* Footer */
+footer{
+  background:#003366;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqoiabDAsEdE6Jhs7OrjMCJd1UYtFhtjboFQ&s" class="logo" alt="School Logo">
+  <h1>SHREE SHANTI NAMUNA SECONDARY SCHOOL</h1>
+  <p>Learning Today • Leading Tomorrow</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Academics</a></li>
+    <li><a href="#">Admissions</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<section>
+  <h2>School Gallery</h2>
+  <div class="slider">
+    <div class="slides">
+      <img src="c:\Users\Sagar Pandey\Downloads\lab.jpg" alt="Science Lab">
+      <img src="c:\Users\Sagar Pandey\Downloads\1.jpg" alt="School Building">
+      <img src="c:\Users\Sagar Pandey\Downloads\sport.jpg" alt="Sports Ground">
+      <img src="c:\Users\Sagar Pandey\Downloads\principal.jpg" alt="Principal">
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>About Our School</h2>
+  <div class="card">
+    Shree Shanti Namuna Secondary School is a community-based educational institution located in Manigram, Tilottama Municipality, Rupandehi District, Nepal. Established with the support of local educators and the community, the school provides quality education from Montessori to higher secondary (+2) level in both Nepali and English mediums. It is known for its focus on academic excellence, moral values, discipline, and overall personality development of students, along with active participation in sports and co-curricular activities
+  </div>
+</section>
+
+<section>
+  <h2>Vision & Mission</h2>
+  <div class="card">
+    <b>Vision:</br>To nurture responsible, skilled, and compassionate citizens who contribute positively to society, uphold ethical values, and excel academically and socially in a rapidly changing world.<br><br>
+    <b>Mission:</br> Provide quality education through innovative teaching methods and modern technology.
+
+Foster moral values, discipline, and creativity among students.
+
+Encourage participation in sports, arts, and co-curricular activities for holistic development.
+
+Promote critical thinking, problem-solving skills, and lifelong learning.
+
+Build an inclusive and supportive learning environment for all students.
+  </div>
+</section>
+
+<section>
+  <h2>Departments</h2>
+  <div class="departments">
+    <div class="dept">📘 Science</div>
+    <div class="dept">🧮 Mathematics</div>
+    <div class="dept">💻 Computer</div>
+    <div class="dept">📚 Humanities</div>
+    <div class="dept">🎨 Arts</div>
+    <div class="dept">⚽ Sports</div>
+  </div>
+</section>
+
+<section>
+  <h2>Contact Us</h2>
+  <div class="card">
+    📍 Rupandehi, Nepal <br>
+    📞 +977-98XXXXXXXX <br>
+    📧 shantinamuna@gmail.com
+  </div>
+</section>
+
+<footer>
+  © 2025 SHREE SHANTI NAMUNA SECONDARY SCHOOL | All Rights Reserved
+</footer>
+
+</body>
+</html>
+
